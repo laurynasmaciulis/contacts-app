@@ -1,0 +1,28 @@
+<div class="container" ng-class="{'loading': vm.isLoading}">
+    <div class="columns">
+        <div class="column col-4">
+            <div class="card" ng-repeat="contact in vm.contacts" ui-sref="contacts.details({id: contact.id})">
+                <div class="card-image">
+                    <img class="avatar avatar-xl" ng-src="{{contact.avatar}}" />
+                </div>
+                <div class="card-header">
+                    <h4 class="card-title">{{contact.name}}</h4>
+                    <h6 class="card-meta">{{contact.email}}</h6>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <button class="btn btn-primary" ui-sref="contacts.add">ADD</button>
+                </div>
+            </div>
+        </div>
+        <div class="column col-8">
+            <div ui-view></div>
+        </div>
+    </div>
+    <div class="columns" ng-if="vm.isLoadingError" class="alert alert-danger">
+        <div class="column col-12">
+            <div class="toast toast-danger">An error occurred loading contacts! Please try again later.</div>
+        </div>
+    </div>
+</div>
