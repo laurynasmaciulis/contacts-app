@@ -4,10 +4,10 @@
     <meta charset="utf-8">
     <title>JS Assignment</title>
     <meta name="description" content="JS Assignment">
-
+    
     <!-- Using other familiar CSS framework due to time constrains -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/spectre.css/0.1.32/spectre.min.css">
-
+    
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular-route.min.js"></script>
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/1.0.0-rc.1/angular-ui-router.min.js"></script>
@@ -15,15 +15,18 @@
 
     <!-- build:js js/app.min.js -->
     <script type="text/javascript" src="app/app.js"></script>
-
+    
     <script type="text/javascript" src="app/components/contacts-list/contacts-list.router.js"></script>
     <script type="text/javascript" src="app/components/contacts-list/contacts-list.controller.js"></script>
 
     <script type="text/javascript" src="app/components/contacts-details/contacts-details.router.js"></script>
     <script type="text/javascript" src="app/components/contacts-details/contacts-details.controller.js"></script>
-
+    
+    <script type="text/javascript" src="app/components/contacts-add/contacts-add.router.js"></script>
+    <script type="text/javascript" src="app/components/contacts-add/contacts-add.controller.js"></script>
+    
     <script type="text/javascript" src="app/services/contacts.service.js"></script>
-
+    
     <script type="text/javascript" src="app/constants/api.constants.js"></script>
     <!-- endbuild -->
 
@@ -31,7 +34,7 @@
 
 <body>
     <div class="container" ng-app="app">
-        <div ui-view></div>
+        <div ui-view></div> 
     </div>
 </body>
 

@@ -1,0 +1,52 @@
+<h2>Add new contact:</h2>
+<form name="contactsForm" class="form-horizontal" novalidate ng-submit="vm.addContact()">
+    <div class="form-group">
+        <div class="col-3">
+            <label class="form-label" for="name">Name*</label>
+        </div>
+        <div class="col-9">
+            <input class="form-input" type="text" id="name" placeholder="Name" ng-model="vm.newContact.name" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-3">
+            <label class="form-label" for="email">Email*</label>
+        </div>
+        <div class="col-9">
+            <input class="form-input" name="email" type="email" id="email" placeholder="Email" ng-class="{'is-danger': contactsForm.email.$invalid && !contactsForm.email.$pristine}" ng-model="vm.newContact.email" required/>
+            <p class="form-input-hint" ng-show="contactsForm.email.$invalid && !contactsForm.email.$pristine">The email is invaild.</p>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-3">
+            <label class="form-label" for="job">Job*</label>
+        </div>
+        <div class="col-9">
+            <input class="form-input" type="text" id="job" placeholder="Job" ng-model="vm.newContact.job" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-3">
+            <label class="form-label" for="location">Location*</label>
+        </div>
+        <div class="col-9">
+            <input class="form-input" type="text" id="location" placeholder="Location" ng-model="vm.newContact.location" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <div class="col-3">
+            <label class="form-label" for="tag">Tag*</label>
+        </div>
+        <div class="col-9">
+            <input class="form-input" type="text" id="tag" placeholder="Tag" ng-model="vm.newContact.tag" required/>
+        </div>
+    </div>
+    <div class="form-group">
+        <p>* are required</p>
+    </div>
+    <div class="form-group">
+        <button class="btn btn-primary" type="submit" ng-disabled="contactsForm.$invalid">Add</button>
+    </div>
+    
+
+</form>
