@@ -5,6 +5,8 @@ angular.module('app', [
     'ui.router',
     'app.components.contacts-list.router',
     'app.components.contacts-list.controller',
+    'app.components.contacts-details.router',
+    'app.components.contacts-details.controller',
     'app.constants.api',
     'app.services.contacts',
   ]).config(['$urlRouterProvider', '$sceDelegateProvider', 'API', function($urlRouterProvider, $sceDelegateProvider, API) {
