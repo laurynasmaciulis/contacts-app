@@ -1,0 +1,28 @@
+{
+  "name": "TalkTalk-contacts",
+  "version": "0.1.0",
+  "description": "Assignment to test Angular skills",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "grunt": "~1.0.1"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-cli": "^1.2.0",
+    "grunt-contrib-copy": "^1.0.0",
+    "grunt-contrib-concat": "^1.0.1",
+    "grunt-contrib-uglify": "^2.0.0",
+    "grunt-usemin": "^3.1.1",
+    "jshint-stylish": "^2.2.1",
+    "grunt-contrib-jshint": "^1.1.0",
+    "grunt-angular-templates": "^1.1.0",
+    "karma": "^1.4.1",
+    "grunt-karma": "^2.0.0",
+    "jasmine-core": "^2.5.2",
+    "karma-jasmine": "^1.1.0",
+    "karma-junit-reporter": "^1.2.0",
+    "karma-phantomjs-launcher": "^1.0.2",
+    "karma-ng-html2js-preprocessor": "^1.0.0"
+  },
+  "author": "Laurynas Maciulis"
+}
