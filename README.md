@@ -1,12 +1,18 @@
 # contacts-app
 Angular 1.6 test app
 
-## Before building or testing:
-npm install
-npm install -g grunt-cli
+## Install dependencies (requires Node.js):
+```sh
+$ npm install
+$ npm install -g grunt-cli
+```
 
-## How to build application:
-grunt
+## Build application:
+```sh
+$ grunt
+```
 
-## How to test application:
-grunt test
+## Run tests:
+```sh
+$ grunt test
+```
